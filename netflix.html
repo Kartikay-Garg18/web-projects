@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 0;
+        margin: 0;
+        background-color: black;
+      }
+
+      .vig {
+        position: absolute;
+        z-index: 0;
+        background-color: #000000;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0.55;
+      }
+
+      .back {
+        position: relative;
+        width: 100vw;
+        height: 97.9vh;
+        border-bottom: 8px solid rgba(128, 128, 128, 0.7);
+        overflow: hidden;
+        box-shadow: 10px 10px 120px 20px inset;
+      }
+
+      .bg {
+        z-index: -1;
+        position: absolute;
+        top: -270px;
+        left: -190px;
+        width: 125vw;
+        height: 150vh;
+      }
+
+      .logoc {
+        z-index: 1;
+        width: 100vw;
+        position: absolute;
+        height: 13vh;
+      }
+
+      .logo {
+        position: absolute;
+        left: 100px;
+        top: -40px;
+        width: 300px;
+      }
+      .lang{
+          position: absolute;
+          width:100vw;
+          height:13vh;
+        }
+     #option{
+      padding-top: 2px;
+        text-align: center; 
+        top:30px;
+        width: 110px;
+        height: 33px;
+        position: absolute;
+        right: 290px;
+        color: white;
+        font-size: 15px;
+        background-color: #000000;
+        border: 0.5px solid rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+      }
+      .signbtn{
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        right: 190px;
+      }
+      #signbtn{
+        font-weight: 600;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        border: none;
+        border-radius: 4px;
+        width: 70px;
+        height: 33px;
+        cursor:pointer;
+        background-color: rgb(231, 1, 1);
+      }
+      #signbtn:hover{
+        background-color: rgb(189, 3, 3);
+      }
+      
+      .intro{
+        text-align: center;
+        position: relative;
+        color: white;
+        top: 250px;
+      }
+      #punchline{
+        font-size:xxx-large;
+        display: inline-block;
+        width: 1100px;
+        font-size: 43px;
+        font-weight: 800;
+      }
+      #join{
+        margin: 15px;
+        margin-bottom: 25px;
+        display: block;
+        font-weight:400;
+        font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+        font-size: 25px;
+      }
+      
+      #mem{
+        margin: 15px;
+        display: block;
+        font-size: 20px;
+        font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+        
+      }
+      
+      .input{
+        position: relative;
+        left: -90px;
+      }
+      #input{
+        border: 1px solid rgb(213, 213, 213);
+        border-radius: 4px;
+        width: 400px;
+        /* height: 50px; */
+        font-size: 16px;
+        font-weight: 600;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="vig"></div>
+
+      <div class="logoc">
+        <img src="logo.png" alt="logo" class="logo" />
+        <div class="lang">
+        <select name="option" id="option">
+            <option value="English"><i class="material-icons">&#xe8e2;</i>English</option>
+            <option value="English"></option>
+          </select>
+        </div>
+        <div class="signbtn">
+          <button id="signbtn">Sign In</button>
+        </div>
+        <div class="intro">
+          <span id="punchline">The biggest Indian hits. Ready to watch here from ₹ 149.</span>
+          <span id="join">Join today. Cancel anytime.</span>
+          <span id="mem">Ready to watch? Enter your email to create or restart your membership.</span>
+          <div class="input">
+            <input id="input" type="text" placeholder="Email address">
+          </div>
+        </div>
+      </div>
+
+      <div class="back">
+        <img src="bg.jpg" alt="bg" class="bg" />
+      </div>
+
+      
+
+    </header>
+  </body>
+</html>
